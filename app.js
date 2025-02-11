@@ -123,3 +123,14 @@ function prevTrack(){
         playTrack();
     }
 }
+
+// Make the music player responsive
+window.addEventListener("resize", function() {
+    if (window.innerWidth <= 768) {
+        musicPlayer.style.width = "90%";
+        musicPlayer.style.left = "5%";
+    } else {
+        musicPlayer.style.width = "450px";
+        musicPlayer.style.left = "0";
+    }
+});
